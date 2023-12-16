@@ -50,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 200px;
     width: 20%;
     opacity: 20%;
 }
