@@ -1,7 +1,7 @@
 <template>
   <div class="main pa-10">
     <h1 class="text-center text-white mb-10">Work History</h1>
-    <v-row class="justify-cente align-center mt-10">
+    <v-row class="justify-space-evenly align-center mt-10">
       <v-card class="mb-10 d-flex flex-column align-center justify-center" height="500px" width="500px" style="background-color: rgba(0,0,0,0.5);">
         <v-card-title class="text-white"> Pal's Sudden Service </v-card-title>
         <div class="pals" style="width: 90%; height: 200px; "></div>

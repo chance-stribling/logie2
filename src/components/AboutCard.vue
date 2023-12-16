@@ -64,7 +64,7 @@ p {
   align-items: center;
 }
 .main{
-  height: 170vh;
+  height: 180vh;
 }
 } 
 </style>
