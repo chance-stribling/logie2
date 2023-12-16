@@ -1,8 +1,8 @@
 <template>
   <div class="main pa-10">
     <h1 class="text-center text-white mb-10">Work History</h1>
-    <v-row class="justify-center mt-10">
-      <v-card class="mr-10 d-flex flex-column align-center" height="500px" width="500px" style="background-color: rgba(0,0,0,0.5);">
+    <v-row class="justify-cente align-center mt-10">
+      <v-card class="mb-10 d-flex flex-column align-center justify-center" height="500px" width="500px" style="background-color: rgba(0,0,0,0.5);">
         <v-card-title class="text-white"> Pal's Sudden Service </v-card-title>
         <div class="pals" style="width: 90%; height: 200px; "></div>
         <v-card-text class="text-justify text-white" style="font-size: 15px;">
@@ -15,7 +15,7 @@
           team’s commitment to providing an outstanding dining experience.
         </v-card-text>
       </v-card>
-      <v-card class="mr-10 d-flex flex-column align-center" height="500px" width="500px" style="background-color: rgba(0,0,0,0.5);">
+      <v-card class=" d-flex flex-column align-center" height="500px" width="500px" style="background-color: rgba(0,0,0,0.5);">
         <v-card-title class="text-white"> Genuine Foods </v-card-title>
         <div class="genuine" style="width: 90%; height: 200px"></div>
         <v-card-text class="text-justify text-white" style="font-size: 15px;">

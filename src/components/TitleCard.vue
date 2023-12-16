@@ -27,7 +27,7 @@ export default {
     <v-app-bar-nav-icon></v-app-bar-nav-icon>
   </v-toolbar>
   <div class="titleCard">
-    <h1 style="font-size: 50px" id="element"></h1>
+    <h1 id="element"></h1>
   </div>
 </template>
 <style scoped>
@@ -46,4 +46,14 @@ export default {
   color: white;
   background: url('../assets/images/black.png');
 }
+#element{
+  font-size: 56px;
+}
+@media only screen and (max-width: 1000px) {
+
+  #element{
+    font-size: 30px;
+  }
+} 
+
 </style>

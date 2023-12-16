@@ -10,8 +10,8 @@
   <div class="main3" id="skills">
     <h1 style="text-align: center; padding: 50px;"><b>SKILLS</b></h1>
       <v-row class="d-flex justify-center">
-        <v-card height="180px" width="20%" class="prevent-select card mx-5 my-1" :id="'card'+ skill.id" v-for="skill in skills" @mouseover="backgroundChange(skill.title)">
-          <v-card-title class="text-uppercase text-center mt-15">{{ skill.title }}</v-card-title>
+        <v-card class="prevent-select card mx-5 my-1" :id="'card'+ skill.id" v-for="skill in skills" @mouseover="backgroundChange(skill.title)">
+          <v-card-title class="shrink text-uppercase text-center">{{ skill.title }}</v-card-title>
 
         </v-card>
       </v-row>
@@ -30,35 +30,51 @@
 #billboard{
   transform: translateY(100%);
 }
-@media screen and (max-width: 600px) {
+.main3 {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    padding-bottom: 50px;
+}
+.prevent-select {
+    
+    user-select: none; /* Standard syntax */
+}
+.card:hover {
+    scale: 1.1;
+    color: black;
+    opacity: 70%;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 20%;
+    opacity: 20%;
+}
+@media screen and (max-width: 1000px) {
   #billboard{
-  transform: translateY(800%);
+  display: none;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    width: 40%;
+    opacity: 100%;
 }
 .cover{
 
   font-size: 20px;
 }
+.shrink{
+    font-size: 15px;
 }
-.main3 {
-  min-height: 100vh;
-  width: 100vw;
-  background-color: black;
-  color: white;
-  padding-bottom: 50px;
 }
-.prevent-select {
 
-  user-select: none; /* Standard syntax */
-}
-.card:hover {
-  scale: 1.1;
-  color: black;
-  opacity: 70%;
-}
-.card{
-  
-  opacity: 20%;
-}
 
 </style>
 <script>

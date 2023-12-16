@@ -1,10 +1,10 @@
 <template>
     <div style="width: 100vw; background-color: white" class="pa-10">
       <h1 class="text-black text-center mb-10">Contact Me</h1>
-      <v-row>
+      <div class="rowToCol">
   
         <v-col class="d-flex flex-column justify-center align-center">
-          <v-card style="height: 500px; width: 600px" class="pa-5" color="black">
+          <v-card class="pa-5 card" color="black">
             <v-text-field class="mb-5" label="Name" hide-details="auto"></v-text-field>
             <v-text-field  class="mb-5" label="Email" hide-details="auto"></v-text-field>
             <v-textarea clearable  class="mb-5" label="Message (Please be nice)"></v-textarea>
@@ -20,8 +20,22 @@
             <h3><v-icon icon="mdi-instagram"></v-icon></h3> 
           </div>
         </v-col>
-      </v-row>
+    </div>
     </div>
   </template>
   
-  <style></style>
+  <style>
+    .rowToCol{
+        display: flex;
+        flex-direction: row;
+    }
+@media screen and (max-width: 1000px) {
+    .rowToCol{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 98vw;
+    }
+}
+</style>
